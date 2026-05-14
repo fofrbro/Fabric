@@ -1,0 +1,22 @@
+{
+  "queryset": {
+    "version": "1.0.0",
+    "dataSources": [
+      {
+        "id": "3c52c7fb-3e69-41d7-82dc-70c936a715b5",
+        "clusterUri": "",
+        "type": "Fabric",
+        "databaseItemId": "826d31d5-d6b3-a676-4a07-10c9652ef442",
+        "databaseItemName": "StockAnalytics"
+      }
+    ],
+    "tabs": [
+      {
+        "id": "5111995a-6762-40ab-937f-e0749a7b4e15",
+        "content": "ImportData\n| summarize RowCount = count() by Machine\n\nImportData\n| extend TypeDevenement = tostring(TypeDevenement)\n\nImportData\n| where  TypeDevenement =\"SpawnTask\"\n| take 10\n\nImportData\n| extend NumberOfDaysSinceEvent = datetime_diff('day', now(), TimeStamp)\n\n",
+        "title": "Tab",
+        "dataSourceId": "3c52c7fb-3e69-41d7-82dc-70c936a715b5"
+      }
+    ]
+  }
+}

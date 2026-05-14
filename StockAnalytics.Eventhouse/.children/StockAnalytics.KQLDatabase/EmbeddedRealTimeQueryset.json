@@ -1,0 +1,22 @@
+{
+  "queryset": {
+    "version": "1.0.0",
+    "dataSources": [
+      {
+        "id": "1e31db61-e860-4a0f-9b59-a2551b20d003",
+        "clusterUri": "https://trd-ktbq3fhn6p01x6egg8.z4.kusto.fabric.microsoft.com",
+        "type": "Fabric",
+        "databaseItemId": "652ef442-10c9-4a07-a676-d6b3826d31d5",
+        "databaseItemName": "StockAnalytics"
+      }
+    ],
+    "tabs": [
+      {
+        "id": "8919f841-4104-4a18-9a30-ce6bfc7a49d8",
+        "content": "\nImportData\n| summarize RowCount=count() by Machine\n\n",
+        "title": "Import",
+        "dataSourceId": "1e31db61-e860-4a0f-9b59-a2551b20d003"
+      }
+    ]
+  }
+}

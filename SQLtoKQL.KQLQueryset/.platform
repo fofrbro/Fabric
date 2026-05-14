@@ -1,11 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Warehouse",
-    "displayName": "DW_COPILOT"
+    "type": "KQLQueryset",
+    "displayName": "SQLtoKQL",
+    "description": "Import"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "59fdf631-8572-a330-4545-a96e9bf61277"
+    "logicalId": "2a0d1f90-81a3-8b98-4f46-7aaa9d5f903e"
   }
 }
